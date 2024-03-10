@@ -14,6 +14,7 @@ function ThreeDCardDemo() {
                 src={'https://i.pinimg.com/originals/6f/7a/18/6f7a18abd5dcbf34f9758a41324c6ee4.jpg'}
                 width={960}
                 height={240}
+                alt="Banner"
                 className="object-cover rounded-lg  w-full h-[168px]"
                 />
             </div>
@@ -23,7 +24,7 @@ function ThreeDCardDemo() {
             height="108"
             width="108"
             className=" object-cover ml-4 absolute top-24 w-[108px] h-[108px] sm:top-20 rounded-full group-hover/card:shadow-xl mx-auto"
-            alt="thumbnail"
+            alt="Avatar"
           />
           </div>
         </CardItem>
