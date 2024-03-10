@@ -6,6 +6,25 @@ import ThreeDCardDemo from "./card/page";
 
 const Home = () => {
   const [showOverlay, setShowOverlay] = useState(true);
+  const [ipAddress, setIpAddress] = useState(null);
+
+  useEffect(() => {
+    // Fetch IP address
+    const fetchIpAddress = async () => {
+      try {
+        const response = await fetch('https://ipv4.wtfismyip.com/json');
+        const data = await response.json();
+        setIpAddress(data['YourFuckingIPAddress']);
+      } catch (error) {
+        console.error('Error fetching IP address:', error);
+      }
+    };
+
+    // Hide overlay once IP address is fetched
+    if (showOverlay) {
+      fetchIpAddress();
+    }
+  }, [showOverlay]);
 
   useEffect(() => {
     // Play audio when the overlay is hidden
@@ -20,11 +39,13 @@ const Home = () => {
     setShowOverlay(false);
   };
 
-  return ( 
+  return (
     <main>
       <div className={`fixed inset-0 z-50 bg-black ${showOverlay ? '' : 'hidden'}`} onClick={handleOverlayClick}>
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-white text-lg cursor-pointer">Click to enter</div>
+          <div id='overlay' className="text-white text-lg cursor-pointer">
+            {ipAddress ? ` ${ipAddress}` : 'Fetching ip...'}
+          </div>
         </div>
       </div>
       {/* Use video element for background */}
