@@ -2,32 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #000;
+  color: white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.avatar img {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.badges svg {
+  height: 24px;
+  width: 24px;
+}
+
+@media only screen and (max-width: 450px) {
+  .avatar img {
+    width: 84px;
+    height: 85px;
   }
 }
