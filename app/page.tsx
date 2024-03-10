@@ -45,6 +45,8 @@ const Home = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div id='overlay' className="text-white text-lg cursor-pointer">
             {ipAddress ? ` ${ipAddress}` : 'Fetching ip...'}
+            <br></br>
+            <span className='text-white text-opacity-70 justify-center items-center flex text-xs'> (click to enter)</span>
           </div>
         </div>
       </div>
