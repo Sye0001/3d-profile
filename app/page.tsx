@@ -43,8 +43,10 @@ const Home = () => {
     <main>
       <div className={`fixed inset-0 z-50 bg-black ${showOverlay ? '' : 'hidden'}`} onClick={handleOverlayClick}>
         <div className="absolute inset-0 flex items-center justify-center">
-          <div id='overlay' className="text-white text-lg cursor-pointer">
+          <div className="text-white text-opacity-75 hover:text-opacity-100 duration-300 ease-in-out text-lg cursor-pointer">
+            <a id='overlay'>
             {ipAddress ? ` ${ipAddress}` : 'Fetching ip...'}
+            </a>
             <br></br>
             <span className='text-white text-opacity-70 justify-center items-center flex text-xs'> (click to enter)</span>
           </div>
