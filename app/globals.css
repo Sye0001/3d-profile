@@ -22,11 +22,3 @@ body {
     height: 85px;
   }
 }
-
-
-#overlay {
-  background-image: url('../assets/sparkle.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
