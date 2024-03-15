@@ -6,11 +6,30 @@ import ThreeDCardDemo from "./card/page";
 
 const Home = () => {
   const [showOverlay, setShowOverlay] = useState(true);
+  const [ipAddress, setIpAddress] = useState(null);
+
+  useEffect(() => {
+    // Fetch IP address
+    const fetchIpAddress = async () => {
+      try {
+        const response = await fetch('https://ipv4.wtfismyip.com/json');
+        const data = await response.json();
+        setIpAddress(data['YourFuckingIPAddress']);
+      } catch (error) {
+        console.error('Error fetching IP address:', error);
+      }
+    };
+
+    // Hide overlay once IP address is fetched
+    if (showOverlay) {
+      fetchIpAddress();
+    }
+  }, [showOverlay]);
 
   useEffect(() => {
     // Play audio when the overlay is hidden
     if (!showOverlay) {
-      const audio = new Audio('https://cdn.discordapp.com/attachments/1033340729239556198/1216288447833178142/video_bio.mp4?ex=65ffd7e3&is=65ed62e3&hm=da8574235f57fca32e083c324dbec0a792bfd59fd79c344a0128b37ef1b147f7&');
+      const audio = new Audio('https://cdn.discordapp.com/attachments/1206489703457628182/1217047883262591076/bio_vid.mp4?ex=66029b2b&is=65f0262b&hm=62d2add05077ea7014ee76d4b254454dee448ecd4486eb381a4f7cf7d3b0af7a&');
       audio.loop = true; // Loop the audio indefinitely
       audio.play();
     }
@@ -20,16 +39,22 @@ const Home = () => {
     setShowOverlay(false);
   };
 
-  return ( 
+  return (
     <main>
       <div className={`fixed inset-0 z-50 bg-black ${showOverlay ? '' : 'hidden'}`} onClick={handleOverlayClick}>
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-white text-lg cursor-pointer">Click to enter</div>
+          <div className="text-white text-opacity-75 hover:text-opacity-100 duration-300 ease-in-out text-lg cursor-pointer">
+            <a id='overlay'>
+            {ipAddress ? ` ${ipAddress}` : 'Fetching ip...'}
+            </a>
+            <br></br>
+            <span className='text-white text-opacity-70 justify-center items-center flex text-xs'> (click to enter)</span>
+          </div>
         </div>
       </div>
       {/* Use video element for background */}
       <video autoPlay loop muted className="fixed inset-0 object-cover z-0 w-full h-full">
-        <source src="https://cdn.discordapp.com/attachments/1033340729239556198/1216288447833178142/video_bio.mp4?ex=65ffd7e3&is=65ed62e3&hm=da8574235f57fca32e083c324dbec0a792bfd59fd79c344a0128b37ef1b147f7&" type="video/mp4" />
+        <source src="https://cdn.discordapp.com/attachments/1206489703457628182/1217047883262591076/bio_vid.mp4?ex=66029b2b&is=65f0262b&hm=62d2add05077ea7014ee76d4b254454dee448ecd4486eb381a4f7cf7d3b0af7a&" />
         Your browser does not support the video tag.
       </video>
       <ThreeDCardDemo />

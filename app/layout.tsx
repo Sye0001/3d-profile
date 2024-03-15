@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sye",
+  title: "disturb.lol",
   description: "Developed and owned by @.sye on Discord",
 };
 
