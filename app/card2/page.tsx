@@ -56,14 +56,15 @@ function FramedCard () {
        <CardItem translateZ="70" className="px-2 mt-5 w-full">
     <h3 className="uppercase text-white text-opacity-55 font-semibold text-xs">About me</h3>
     <div className="aboutme mt-2 text-white text-opacity-90 w-full text-center md:text-lg text-xs" style={{ maxWidth: "100%", overflowX: "auto" }}>
-        <p style={{ whiteSpace: "pre-wrap" }}>殪幢緻Iii爰曷樔黎㌢´　　｀ⅷi爰曷樔黎i爰曷<br></br>
-        艇艀裲f睚鳫巓襴骸&apos;     𓆩  𓆪&apos;贒憊幢緻Iii爰曷幢<br></br>
-        殪幢緻I翰儂樔黎夢'”         ,ｨ傾I翰儂樔黎I翰儂<br></br>
-        盥皋袍i耘蚌紕偸&apos;　　　 雫寬I袍i耘蚌紕袍i耘<br></br>
-        悗f篝嚠篩i縒縡ii 　　 　 Ⅷ辨f輯駲f迯輯駲f<br></br>
-        輯駲f迯瓲i軌帶&apos;　　　　　守I厖輯駲f迯孩悗</p>
+        <p style={{ whiteSpace: "pre-wrap" }}>殪幢緻Iii爰曷樔黎㌢&lsquo;　 　ⅷi爰曷樔黎i爰曷<br></br>
+        艇艀裲f睚鳫巓襴骸     &nbsp;&nbsp;&nbsp;𓆩&nbsp;&nbsp;𓆪   贒憊幢緻Iii爰曷幢<br></br>
+        殪幢緻I翰儂樔黎夢       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ｨ傾I翰儂樔黎I翰儂<br></br>
+        盥皋袍i耘蚌紕偸&            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雫寬I袍i耘蚌紕袍i耘<br></br>
+        悗f篝嚠篩i縒縡ii                &nbsp;&nbsp;&nbsp;&nbsp;Ⅷ辨f輯駲f迯輯駲f<br></br>
+        輯駲f迯瓲i軌帶                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;守I厖輯駲f迯孩悗</p>
     </div>
 </CardItem>
+
 
 <CardItem translateZ="80" className="px-2 mt-8">
     <h3 className="uppercase text-white text-opacity-55 font-semibold text-xs">Connections</h3>
