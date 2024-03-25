@@ -54,7 +54,7 @@ const Framed = () => {
       </div>
       {/* Use video element for background */}
       <video autoPlay loop muted className="fixed inset-0 object-cover z-0 w-full h-full">
-        <source src="https://cdn.discordapp.com/attachments/1124879216316522600/1215982702117912717/HOW_U_FEEL.mp4?ex=65febb24&is=65ec4624&hm=80445e09429851f526c56a1d258df73d036f8e60a8a55897b27e71e7a8917b76&" />
+        <source src="https://cdn.discordapp.com/attachments/1124879216316522600/1215982702117912717/HOW_U_FEEL.mp4?ex=66113024&is=65febb24&hm=b44f9f7712a5a64a94bea0f303245b3fd88742580eb842c3f366d9604e7d96c9&" />
         Your browser does not support the video tag.
       </video>
       <ThreeDCardDemo />
