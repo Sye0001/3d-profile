@@ -29,7 +29,7 @@ const Framed = () => {
   useEffect(() => {
     // Play audio when the overlay is hidden
     if (!showOverlay) {
-      const audio = new Audio('https://cdn.discordapp.com/attachments/1124879216316522600/1218162963408490516/BabyTron_Streetball_Mixxx.mp3?ex=6606a9aa&is=65f434aa&hm=908523a817a82800b91668b3c565c35635aa59c93482723f0cb1db2042d49e81&');
+      const audio = new Audio('https://jmp.sh/s/5jTT02WXHlUgCmBMzeCn');
       audio.loop = true; // Loop the audio indefinitely
       audio.play();
     }
