@@ -11,7 +11,7 @@ function FramedCard () {
         <CardItem translateZ="60" className="w-full rounded-md mt-4">
             <div className="banner">
                 <Image
-                src={'https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZBTOrs0TtpQMd4kFkLEvL6daxhQi9_BUAWLFXBqhar-2EyzIjnbP461RXYcspi-YaTDXMyhrXGiQxr9jAIgL-bxCA7Sw=w1679-h931'}
+                src={'https://i.ibb.co/DzC8vck/bannerr.jpg'}
                 width={960}
                 height={240}
                 alt="Banner"
@@ -20,7 +20,7 @@ function FramedCard () {
             </div>
             <div className="avatar">
           <Image
-            src="https://i.pinimg.com/originals/9d/2c/d1/9d2cd182892de94260a9b386eeca24ca.jpg"
+            src="https://i.ibb.co/8zWNx8b/19aad1b53f21d993ded90fe91b1acdb5.png"
             height="108"
             width="108"
             className=" object-cover ml-4 absolute top-24 w-[108px] h-[108px] sm:top-20 rounded-full group-hover/card:shadow-xl mx-auto"
