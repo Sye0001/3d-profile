@@ -29,7 +29,7 @@ const Risky = () => {
   useEffect(() => {
     // Play audio when the overlay is hidden
     if (!showOverlay) {
-      const audio = new Audio('https://cdn.discordapp.com/attachments/1151192799241318560/1196124857365176370/In_My_Prime.mp3?ex=667a43d4&is=6678f254&hm=91dfa18e3a976841a60a6b5088e1c3f9f64b0ad8de3d8fc22e61d1769a3dd253&);
+      const audio = new Audio('https://cdn.discordapp.com/attachments/1151192799241318560/1196124857365176370/In_My_Prime.mp3?ex=667a43d4&is=6678f254&hm=91dfa18e3a976841a60a6b5088e1c3f9f64b0ad8de3d8fc22e61d1769a3dd253&');
       audio.loop = true; // Loop the audio indefinitely
       audio.play();
     }
