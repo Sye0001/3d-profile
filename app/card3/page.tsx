@@ -56,7 +56,7 @@ function RiskyCard () {
        <CardItem translateZ="70" className="px-2 mt-5 w-full">
     <h3 className="uppercase text-white text-opacity-55 font-semibold text-xs">About me</h3>
     <div className="aboutme mt-2 text-white text-opacity-90 w-full  md:text-lg text-xs pl-1" style={{ maxWidth: "100%", overflowX: "auto" }}>
-        <p style={{ whiteSpace: "pre-wrap" }}>♡
+        <p style={{ whiteSpace: "pre-wrap" }}>new account @numilya
 </p>
     </div>
 </CardItem>
