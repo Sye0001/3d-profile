@@ -29,7 +29,7 @@ const Risky = () => {
   useEffect(() => {
     // Play audio when the overlay is hidden
     if (!showOverlay) {
-      const audio = new Audio('https://pouch.jumpshare.com/preview/EW8FhUKxuQeNChgKxAOpjG2PYwY3k2PNL1ER4uwwEB6lrmdWxycWYjMjNutbfbcWx_2GlM7dqG8v4hN0BMx0N95JDXqG4wVPxlw9KFKbD8vHIaxchrCd2WS1JwYnTw9tsHetDA98TMXeayoRyTRLl26yjbN-I2pg_cnoHs_AmgI.mp3');
+      const audio = new Audio('./risky/song.mp3');
       audio.loop = true; // Loop the audio indefinitely
       audio.play();
     }
