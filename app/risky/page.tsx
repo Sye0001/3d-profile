@@ -29,7 +29,7 @@ const Risky = () => {
   useEffect(() => {
     // Play audio when the overlay is hidden
     if (!showOverlay) {
-      const audio = new Audio('./risky/song.mp3');
+      const audio = new Audio('./song.mp3');
       audio.loop = true; // Loop the audio indefinitely
       audio.play();
     }
